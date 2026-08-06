@@ -4,8 +4,8 @@
 
 #include <stdio.h>
 // For this backspace to be registerd as input, you terminal should not be in
-// canonical mode, to disable it, type stty -icanon , to enable it type stty
-// icanon, you may also get '^?' from the terminal driver
+// canonical mode(should be in raw mode), to disable it, type stty -icanon , to
+// enable it type stty icanon, you may also get '^?' from the terminal driver
 // You can also run stty -echo to disable echo and hide your inputmaking the
 // program furnction as intented and type stty echo to renable it
 int main() {
