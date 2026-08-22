@@ -6,10 +6,11 @@
 #define TAB 10 // space between tabs in number of characters
 
 // NOTE: For this programs to work as expected, your terminal must be in raw
-// mode (not cannonical mode) and have echo deisabled. Do this by running the
+// mode (not cannonical mode) and have echo disabled. Do this by running the
 // following commands.
 // WARNING: Use these commands with care, as it may be
-// tricky to reanable echo without seeing what you are typing Disable
+// tricky to reanable echo without seeing what you are typing
+// Disable
 // 1. stty -icanon
 // 2. stty -echo
 // Re-enable

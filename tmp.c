@@ -1,10 +1,8 @@
+#include <ctype.h>
 #include <stdio.h>
 
 int main() {
-  double nc;
+  enum test { A = 1, B, C = 4, D };
 
-  for (nc = 0; getchar() != EOF; ++nc) {
-    ;
-    printf("%.0f\n", nc);
-  }
+  printf("%d %d", B, D);
 }
