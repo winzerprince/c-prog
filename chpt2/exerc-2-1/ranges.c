@@ -62,15 +62,24 @@ int main() {
 
   // For floating point types, the min represent smallest normalized positive
   // value rahter than negative value with greatest magnitude
+  // NOTE: The minimum values used here represent those of float in normalized
+  // form ie stored value = 1.mantissa x 2^exponent
+  //
+  // %e for scientific notation instead of %f, %lf or %Lf which would only use
+  // 6dp
+
   printf("\nfloat\n");
-  printf("\tMIN: %f\n", FLT_MIN);
-  printf("\tMAX: %f\n", FLT_MAX);
+  printf("\tMIN: %e\n", FLT_MIN);
+  printf("\tMAX: %e\n", FLT_MAX);
+  printf("\tSignificant digits: ~7\n");
 
   printf("\ndouble\n");
-  printf("\tMIN: %lf\n", DBL_MIN);
-  printf("\tMAX: %lf\n", DBL_MAX);
+  printf("\tMIN: %e\n", DBL_MIN);
+  printf("\tMAX: %e\n", DBL_MAX);
+  printf("\tSignificant digits: ~15-17\n");
 
   printf("\nlong double\n");
-  printf("\tMIN: %Lf\n", LDBL_MIN);
-  printf("\tMAX: %Lf\n", LDBL_MAX);
+  printf("\tMIN: %e\n", LDBL_MIN);
+  printf("\tMAX: %e\n", LDBL_MAX);
+  printf("\tSignificant digits: ~18-19\n");
 }
