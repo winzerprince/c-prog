@@ -73,8 +73,8 @@ int to_hex(char *s, int lim, int digits[]) {
   if (has_0x) {
     j -= 2;
   }
-  int pv_num = 0;
-  int pv = j - 1;
+  int pv_num = 0; // number at place value
+  int pv = j - 1; // place value
 
   for (int i = 0; i <= j; i++) {
     pv_num = 1;
@@ -109,3 +109,5 @@ int get_string(char *s, int lim) {
   s[i] = '\0';
   return i;
 }
+
+// Complete
